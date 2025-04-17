@@ -1,3 +1,4 @@
+import StoreProvider from "@/components/provider";
 import Header from "@/components/header";
 
 export default function RootLayout({
@@ -7,8 +8,10 @@ export default function RootLayout({
 }>) {
   return (
     <main>
-      <Header />
-      {children}
+      <StoreProvider>
+        <Header />
+        {children}
+      </StoreProvider>
     </main>
   );
 }

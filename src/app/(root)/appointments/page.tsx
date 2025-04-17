@@ -1,7 +1,11 @@
-import React from "react";
+import AppointmentsList from "@/app/(root)/appointments/appointmentsList";
 
 const Appointments = () => {
-  return <div>Appointments</div>;
+  return (
+    <div>
+      Appointments <AppointmentsList />
+    </div>
+  );
 };
 
 export default Appointments;
