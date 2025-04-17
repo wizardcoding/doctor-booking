@@ -13,7 +13,7 @@ export const appointmentSlice = createSlice({
         { state.appointments = [...state.appointments, action.payload] },
         
         remove: (state: { appointments: Array<Appointment> }, action) =>
-        { state.appointments = state.appointments.filter(appoint => appoint !== action.payload) },
+        { state.appointments = state.appointments.filter(appoint => appoint !== state.appointments[action.payload]) },
 
         removeAll: (state: { appointments: Array<Appointment> }) =>
         { state.appointments = [] },

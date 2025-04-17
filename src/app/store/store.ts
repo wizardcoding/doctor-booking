@@ -6,3 +6,5 @@ export const store = configureStore({
     appoint: appointmentReducer,
   },
 });
+
+export type RootState = ReturnType<typeof store.getState>
