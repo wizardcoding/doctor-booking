@@ -1,6 +1,4 @@
 "use client";
-import { useSelector } from "react-redux";
-import { RootState } from "@/app/store/store";
 import {
   Card,
   CardContent,
@@ -30,19 +28,6 @@ const DoctorCard = ({
       className="text-slate-600 border-1"
     />
   );
-
-  const scheduleData = useSelector(
-    (state: RootState) => state.appoint.appointments
-  );
-
-  //   const slots = scheduleData.map((doc: { doctor: string; date: string }) => {
-  //     if (doc.doctor === name) {
-  //     }
-
-  //     return doc.date;
-  //   });
-
-  //const available = slots.includes(schedule);
 
   return (
     <Card className="max-w-2xs md:max-w-3xs min-w-56 h-52 md:h-[400px] text-center m-2">
