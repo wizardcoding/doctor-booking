@@ -26,7 +26,7 @@ const Header = () => {
             } text-center text-xs md:w-36 md:text-base`}
             href={"/doctors"}
           >
-            Appoint a doctor
+            Directory
           </Link>
         </div>
       </div>

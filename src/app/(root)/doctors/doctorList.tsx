@@ -5,20 +5,7 @@ const DoctorList = () => {
     <div>
       <DoctorCard
         name="New Doctor"
-        specialities={[
-          "orto",
-          "cardio",
-          "muscle",
-          "orto",
-          "cardio",
-          "muscle",
-          "orto",
-          "cardio",
-          "muscle",
-          "orto",
-          "cardio",
-          "muscle",
-        ]}
+        specialities={["orto", "cardio", "muscle"]}
         schedule={[]}
       />
     </div>
