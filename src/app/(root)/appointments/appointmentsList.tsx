@@ -15,7 +15,7 @@ const AppointmentsList = () => {
   const removeOne = (indx: number) => {
     dispatch(remove(indx));
   };
-  const removeComplete = () => dispatch(removeAll());
+  //const removeComplete = () => dispatch(removeAll());
   return (
     <>
       data list{" "}
