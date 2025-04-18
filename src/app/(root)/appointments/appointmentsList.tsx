@@ -1,7 +1,7 @@
 "use client";
 
 import { useSelector, useDispatch } from "react-redux";
-import { add, remove, removeAll } from "@/app/store/features/appointmentSlice";
+import { add, remove } from "@/app/store/features/appointmentSlice";
 import { RootState } from "@/app/store/store";
 
 const AppointmentsList = () => {
