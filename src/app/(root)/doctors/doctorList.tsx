@@ -1,13 +1,10 @@
-import DoctorCard from "@/components/doctorCard";
+import { doctorsData } from "@/api/data";
+import ListDisplay from "./listDisplay";
 
 const DoctorList = () => {
   return (
     <div>
-      <DoctorCard
-        name="New Doctor"
-        specialities={["orto", "cardio", "muscle"]}
-        schedule={[]}
-      />
+      <ListDisplay list={doctorsData} />
     </div>
   );
 };
