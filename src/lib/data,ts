@@ -1,3 +1,0 @@
-export const doctors = [
-    { name: 'doctor', speciality: ['one', 'two', 'three'], availability: ['one', 'two', 'three'], location: '', appointments: [], photo: '', rating: '' },
-]

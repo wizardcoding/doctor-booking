@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import * as logo from "@/assets/heal.avif";
 import { usePathname } from "next/navigation";
+import DropdownSpeciality from "./dropdownSpeciality";
 
 const Header = () => {
   const path = usePathname();
@@ -28,6 +29,7 @@ const Header = () => {
           >
             Directory
           </Link>
+          {path === "/doctors" && <DropdownSpeciality />}
         </div>
       </div>
     </div>

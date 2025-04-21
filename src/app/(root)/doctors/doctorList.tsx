@@ -1,13 +1,14 @@
-import DoctorCard from "@/components/doctorCard";
+"use client";
+
+import ListDisplay from "./listDisplay";
+import { RootState } from "@/app/store/store";
+import { useSelector } from "react-redux";
 
 const DoctorList = () => {
+  const medicalData = useSelector((state: RootState) => state.doctors.doctors);
   return (
     <div>
-      <DoctorCard
-        name="New Doctor"
-        specialities={["orto", "cardio", "muscle"]}
-        schedule={[]}
-      />
+      <ListDisplay list={medicalData} />
     </div>
   );
 };
