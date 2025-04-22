@@ -38,20 +38,20 @@ const ConfirmationModal = ({
           <span className="md:hidden">Book Now</span>
         </Button>
       </DialogTrigger>
-      <DialogContent className="min-w-96">
+      <DialogContent className="min-w-20">
         <DialogHeader className="justify-center">
           <DialogTitle className="text-center">
             Confirm Your appointment ?
           </DialogTitle>
-          <DialogDescription className="max-w-52 grid grid-flow-col grid-rows-3 gap-3 mt-2.5 mx-auto">
-            <span className="break-after-all">
+          <DialogDescription className="grid grid-flow-col grid-rows-3 gap-3 mt-2.5 mx-auto">
+            <span>
               <strong>Doctor:</strong> {name}
             </span>
-            <span className="break-after-all">
+            <span>
               <strong>Location: </strong>
               {location}
             </span>
-            <span className="break-after-all">
+            <span>
               <strong>Date: </strong>
               <DropdownSchedule
                 options={schedule}
