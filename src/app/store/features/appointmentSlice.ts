@@ -3,6 +3,8 @@ import { createSlice } from '@reduxjs/toolkit';
 declare type Appointment =  {
     doctor?: string;
     date?: string;
+    speciality?: string;
+    location?: string;
 }
 
 export const appointmentSlice = createSlice({

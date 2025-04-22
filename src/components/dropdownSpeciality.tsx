@@ -75,11 +75,12 @@ const DropdownSpeciality = () => {
 
     setSpecials(optionsUpdate);
   };
+  // 10px
 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button className="border-2 border-teal-500 bg-blue-50 text-slate-700 hover:bg-blue-100 hover: font-bold">
+        <Button className="border-2 border-teal-500 bg-blue-50 text-slate-700 hover:bg-blue-100 hover: font-bold h-2.5 md:h-9 ">
           Speciality
         </Button>
       </DropdownMenuTrigger>

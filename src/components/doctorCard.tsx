@@ -59,13 +59,14 @@ const DoctorCard = ({
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <p>Schedules</p>
+        <p>Check Availability !</p>
       </CardContent>
       <CardFooter className="justify-center">
         <ConfirmationModal
           name={name}
           location={location}
           schedule={schedule}
+          speciality={specialities[0]}
         />
       </CardFooter>
     </Card>
