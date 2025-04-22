@@ -2,14 +2,12 @@
 
 import { useSelector } from "react-redux";
 import { RootState } from "@/app/store/store";
-import { useRouter } from "next/navigation";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
 const AppointmentsList = () => {
   const scheduleData = useSelector(
     (state: RootState) => state.appoint.appointments
   );
-  // min height height: 380px; 660px     height: 79px;
   return (
     <>
       {scheduleData.length > 0 ? (
