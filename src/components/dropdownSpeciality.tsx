@@ -29,6 +29,7 @@ const DropdownSpeciality = () => {
       return { specialityName: `${speciality}`, checked: false };
     });
     setSpecials(initialState);
+    dispatch(set(doctorsData));
   }, []);
 
   const crossSearch = (filerSearch: string[], doctorSearch: string[]) => {
