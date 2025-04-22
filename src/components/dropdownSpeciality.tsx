@@ -78,7 +78,7 @@ const DropdownSpeciality = () => {
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger asChild tabIndex={3}>
+      <DropdownMenuTrigger asChild tabIndex={0}>
         <Button className="border-2 border-teal-500 bg-blue-50 text-slate-700 hover:bg-blue-100 hover: font-bold h-2.5 md:h-9 ">
           Speciality
         </Button>
@@ -89,6 +89,7 @@ const DropdownSpeciality = () => {
         {specials.map(
           (speciality: { specialityName: string; checked: boolean }, index) => (
             <DropdownMenuItem
+              tabIndex={2}
               className={speciality.checked ? "text-blue-500 font-bold" : ""}
               key={index}
               onClick={() => checkOption(index)}

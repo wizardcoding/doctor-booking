@@ -1,7 +1,7 @@
 export const doctorsData = [
   { 
     name: 'Emily Carter', 
-    speciality: ['Cardiology', 'Internal Medicine'], 
+    speciality: ['Cardiology', 'I. Medicine'], 
     availability: ['Monday: 9:00', 'Wednesday: 11:15', 'Friday: 15:30'], 
     location: 'New York, NY', 
     appointments: [], 
@@ -19,7 +19,7 @@ export const doctorsData = [
   },
   { 
     name: 'Sofia Rodriguez', 
-    speciality: ['Dermatology', 'Cosmetic Surgery'], 
+    speciality: ['Dermatology', 'Surgery'], 
     availability: ['Monday: 13:30', 'Wednesday: 8:45', 'Friday: 16:20'], 
     location: 'Miami, FL', 
     appointments: [], 
@@ -55,7 +55,7 @@ export const doctorsData = [
   },
   { 
     name: 'Linda O Connor', 
-    speciality: ['Orthopedics', 'Sports Medicine'], 
+    speciality: ['Orthopedics', 'Sports Rehab'], 
     availability: ['Monday: 7:45', 'Wednesday: 12:30', 'Friday: 15:00'], 
     location: 'Boston, MA', 
     appointments: [], 
