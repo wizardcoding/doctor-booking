@@ -19,7 +19,8 @@ const Header = () => {
             } md:w-36 md:text-base text-xs text-center`}
             href={"/appointments"}
           >
-            My Appointments
+            <span className="hidden md:block">My Appointments</span>
+            <span className="md:hidden">Appointments</span>
           </Link>
           <Link
             className={`${
