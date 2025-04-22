@@ -39,7 +39,7 @@ const DoctorCard = ({
     <Card className="max-w-2xs md:max-w-3xs min-w-56 h-52 md:h-[400px] text-center m-2">
       <CardHeader className="justify-center">
         <Avatar className="w-24 h-24 hidden md:block mx-auto">
-          <AvatarImage src={photo} />
+          <AvatarImage src={photo} alt={name} />
           <AvatarFallback>DR</AvatarFallback>
         </Avatar>
         <CardTitle className="text-slate-800">{name}</CardTitle>
@@ -59,10 +59,11 @@ const DoctorCard = ({
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <p>Check Availability !</p>
+        <p>Book to check availability !</p>
       </CardContent>
       <CardFooter className="justify-center">
         <ConfirmationModal
+          aria-label="Book an Appointment"
           name={name}
           location={location}
           schedule={schedule}
