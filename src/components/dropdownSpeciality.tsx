@@ -75,12 +75,14 @@ const DropdownSpeciality = () => {
 
     setSpecials(optionsUpdate);
   };
-  // 10px
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-        <Button className="border-2 border-teal-500 bg-blue-50 text-slate-700 hover:bg-blue-100 hover: font-bold h-2.5 md:h-9 ">
+      <DropdownMenuTrigger asChild tabIndex={0}>
+        <Button
+          aria-label="Book an Appointment"
+          className="border-2 border-teal-500 bg-blue-50 text-slate-700 hover:bg-blue-100 hover: font-bold h-2.5 md:h-9 "
+        >
           Speciality
         </Button>
       </DropdownMenuTrigger>
@@ -90,6 +92,8 @@ const DropdownSpeciality = () => {
         {specials.map(
           (speciality: { specialityName: string; checked: boolean }, index) => (
             <DropdownMenuItem
+              aria-label="Speciality Option"
+              tabIndex={2}
               className={speciality.checked ? "text-blue-500 font-bold" : ""}
               key={index}
               onClick={() => checkOption(index)}

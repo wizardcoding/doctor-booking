@@ -70,6 +70,7 @@ const ConfirmationModal = ({
         </DialogHeader>
         <DialogClose asChild>
           <Button
+            aria-label="Confirm Appoitment"
             onClick={() =>
               addNew({
                 doctor: name,
