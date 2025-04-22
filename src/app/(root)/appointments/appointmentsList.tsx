@@ -2,7 +2,6 @@
 
 import { useSelector } from "react-redux";
 import { RootState } from "@/app/store/store";
-import { useRouter } from "next/navigation";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
 const AppointmentsList = () => {
